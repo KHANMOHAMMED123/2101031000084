@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS Hover Element - Selector OR Child Combinator</title>
+    <style type="text/css">
+        *{
+            color: cornsilk;
+            background-color: black;
+            border: 5px rgb(207, 115, 115);
+        }
+        #MainUL li ul li{display:none;}
+        #MainUL li:hover ul li{display:block;}
+        #MainUL li:hover ul li ul li{display:none;}
+        #MainUL li ul li:hover ul li{display:block;}
+        #MainUL li ul li:hover ul li ul li{display:none;}
+        #MainUL li ul li ul li:hover ul li{display:block;}
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="MainUL">
+        <li>Google
+            <ul>
+                <li>Gmail
+                    <ul>
+                        <li>Sign in</li>
+                        <li>sign up
+                            <ul>
+                                <li>Sign in as a main id</li>
+                                <li>sign in as a member</li>
+                            </ul>
+
+                        </li>
+                    </ul>
+                </li>
+                <li>youtube</li>
+                <li>Gdrive</li>
+                <li>Gmap</li>
+            </ul>
+        
+        </li>
+        <li>Facebook</li>
+        <li>Microsoft
+            <ul>
+                <li>Bing</li>
+                <li>Linkedin</li>
+            </ul>
+        </li>
+        <li>MSM</li>
+        <li>Amazon
+            <ul>
+                <li>E -commerce</li>
+                <li>AWS</li>
+                <li>A-ML</li>
+            </ul>
+
+        </li>
+
+
+
+
+    
+</body>
+</html>
